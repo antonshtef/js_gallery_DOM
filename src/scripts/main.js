@@ -9,5 +9,10 @@ thumbs.addEventListener('click', (e) => {
 
   const link = e.target.closest('.list-item__link').href;
 
-  largeImage.src = link;
+  if (link !== null) {
+    largeImage.src = link;
+  }
+
+  console.log(link)
+
 });
