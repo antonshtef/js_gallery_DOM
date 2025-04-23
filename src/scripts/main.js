@@ -12,7 +12,4 @@ thumbs.addEventListener('click', (e) => {
   if (link !== null) {
     largeImage.src = link;
   }
-
-  console.log(link)
-
 });
