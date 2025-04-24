@@ -7,9 +7,9 @@ const thumbs = document.getElementById('thumbs');
 thumbs.addEventListener('click', (e) => {
   e.preventDefault();
 
-  const link = e.target.closest('.list-item__link').href;
+  const link = e.target.closest('.list-item__link');
 
   if (link !== null) {
-    largeImage.src = link;
+    largeImage.src = link.href;
   }
 });
